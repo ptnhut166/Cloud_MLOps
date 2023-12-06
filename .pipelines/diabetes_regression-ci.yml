@@ -37,7 +37,7 @@ stages:
     - task: Docker@2
       inputs:
         command: 'build'
-        Dockerfile: 'ml_service/pipelines/diabetes_regression/Dockerfile'
+        Dockerfile: '**/Dockerfile'
     - template: code-quality-template.yml
     - task: AzureCLI@1
       inputs:
