@@ -34,11 +34,12 @@ stages:
     container: mlops
     timeoutInMinutes: 0
     steps:
-    - task: DockerInstaller@0
-      displayName: Docker Installer
+    - task: Docker@2
+      displayName: Build an image
       inputs:
-        dockerVersion: 17.09.0-ce
-        releaseType: stable
+        repository: $(imageName)
+        command: build
+        Dockerfile: app/Dockerfile
     - template: code-quality-template.yml
     - task: AzureCLI@1
       inputs:
