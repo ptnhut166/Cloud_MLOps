@@ -14,7 +14,9 @@ pr:
     include:
       - environment_setup/arm-templates/*
 
-pool: Azure Pipelines
+pool: 
+  name:'default'
+  vmImage:'winagent'
 
 variables:
   - group: devopsforai-aml-vg
