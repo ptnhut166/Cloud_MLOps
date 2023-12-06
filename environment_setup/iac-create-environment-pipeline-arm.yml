@@ -16,7 +16,7 @@ pr:
 
 pool: 
   name: default
-  vmImage: KEPS
+  vmImage: ubuntu
 
 variables:
   - group: devopsforai-aml-vg
