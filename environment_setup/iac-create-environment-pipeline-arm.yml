@@ -28,7 +28,7 @@ steps:
     inputs:
       azureSubscription: "$(AZURE_RM_SVC_CONNECTION)"
       action: "Create Or Update Resource Group"
-      resourceGroupName: "$(RESOURCE_GROUP)"
+      resourceGroupName: "mlops-RG"
       location: $(LOCATION)
       templateLocation: "Linked artifact"
       csmFile: "$(Build.SourcesDirectory)/environment_setup/arm-templates/cloud-environment.json"
