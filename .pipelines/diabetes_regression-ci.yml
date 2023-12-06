@@ -22,7 +22,6 @@ variables:
 - group: devopsforai-aml-vg
 
 pool:
-  agent: KEPS
   vmImage: ubuntu-latest
 
 stages:
