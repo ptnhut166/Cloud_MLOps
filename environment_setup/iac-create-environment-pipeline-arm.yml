@@ -2,21 +2,21 @@
 trigger:
   branches:
     include:
-      - main
+      - master
   paths:
     include:
       - environment_setup/arm-templates/*
 pr:
   branches:
     include:
-      - main
+      - master
   paths:
     include:
       - environment_setup/arm-templates/*
 
 pool: 
   name:"default"
-  vmImage:"winagent"
+  vmImage:"KEPS"
 
 variables:
   - group: devopsforai-aml-vg
