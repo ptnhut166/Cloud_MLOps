@@ -15,8 +15,8 @@ pr:
       - environment_setup/arm-templates/*
 
 pool: 
-  name:Default
-  vmImage:KEPS
+  name:"Default"
+  vmImage:"KEPS"
 
 variables:
   - group: devopsforai-aml-vg
