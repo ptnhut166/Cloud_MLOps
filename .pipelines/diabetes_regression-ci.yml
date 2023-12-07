@@ -34,10 +34,7 @@ stages:
     container: mlops
     timeoutInMinutes: 0
     steps:
-    - task: Docker@2
-      inputs:
-        command: 'buildAndPush'
-        Dockerfile: '**/Dockerfile'
+
     - template: code-quality-template.yml
     - task: AzureCLI@1
       inputs:
