@@ -23,7 +23,7 @@ variables:
 
 pool:
   name: default
-  vmImage: ubuntu-latest
+  vmImage: KEPS
 
 stages:
 - stage: 'Model_CI'
