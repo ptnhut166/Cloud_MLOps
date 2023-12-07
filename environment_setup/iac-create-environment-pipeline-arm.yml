@@ -15,6 +15,7 @@ pr:
       - environment_setup/arm-templates/*
 
 pool: 
+  name: default
   vmImage: ubuntu-latest
 
 variables:
